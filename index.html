@@ -1,1 +1,186 @@
-h2>       <div class="gallery-container">         <img src="images/salon1.jpg" alt="Salon Trim - notranjost" />         <img src="images/salon2.jpg" alt="Frizer pri delu" />         <img src="images/salon3.jpg" alt="Končni rezultat" />       </div>     </section>      <section id="contact">       <h2>Kontakt</h2>       <p>Telefon: 040 123 456</p>       <p>Email: <a href="mailto:info@studiotrim.si">info@studiotrim.si</a></p>       <p>Naslov: Novo mesto, Slovenija</p>     </section>   </main>    <footer>     &copy; 2026 Frizerski Studio Trim – <a href="https://tvojeuporabniskoime.github.io/studiotrim" target="_blank">Obišči spletno stran</a>   </footer>  </body> </html
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frizerski Studio Trim – Novo mesto</title>
+  <style>
+    /* Osnovni stil */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #f05a28;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin: 5px 0 0 0;
+      font-size: 1.2em;
+    }
+
+    /* Glavni del */
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #f05a28;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #f05a28;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background-color: #ffe6d5;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 1.1em;
+    }
+
+    /* Gumbi */
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #f05a28;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 10px 5px 0 0;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #d14a20;
+    }
+
+    /* Galerija */
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery-container img {
+      width: 280px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #f05a28;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive za telefone */
+    @media (max-width: 600px) {
+      .gallery-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .gallery-container img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Frizerski Studio Trim</h1>
+    <p>Novo mesto – Kjer se lepota sreča s stilom</p>
+  </header>
+
+  <main>
+    <!-- Storitve -->
+    <section id="services">
+      <h2>Storitve</h2>
+      <ul>
+        <li>Moško striženje</li>
+        <li>Žensko striženje</li>
+        <li>Barvanje</li>
+        <li>Frizerski tretmaji</li>
+      </ul>
+    </section>
+
+    <!-- Rezervacija -->
+    <section id="booking">
+      <h2>Naročite se</h2>
+      <p>Pokličite ali pošljite email za rezervacijo termina:</p>
+      <a href="tel:040123456" class="button">Pokliči zdaj</a>
+      <a href="mailto:info@studiotrim.si" class="button">Pošlji email</a>
+    </section>
+
+    <!-- Galerija -->
+    <section id="gallery">
+      <h2>Naša galerija</h2>
+      <div class="gallery-container">
+        <img src="images/salon1.jpg" alt="Salon Trim - notranjost">
+        <img src="images/salon2.jpg" alt="Frizer pri delu">
+        <img src="images/salon3.jpg" alt="Končni rezultat">
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <p>Telefon: 040 123 456</p>
+      <p>Email: <a href="mailto:info@studiotrim.si">info@studiotrim.si</a></p>
+      <p>Naslov: Novo mesto, Slovenija</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Frizerski Studio Trim – <a href="#" target="_blank">Obišči spletno stran</a>
+  </footer>
+
+</body>
+</html>
